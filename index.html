@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Tic Tac Toe Game</h1>
+    </div>
+
+
+    <!-- User Name Input Section -->
+    <div class="user-name">
+        <label for="name1">Player 1 Name:</label>
+        <input type="text" id="name1" placeholder="Enter Player 1 Name">
+        <label for="name2">Player 2 Name:</label>
+        <input type="text" id="name2" placeholder="Enter Player 2 Name">
+        <button id="start" class="play-button">Start Game</button>
+    </div>
+
+    <!-- Game Area -->
+    <div class="Game-box">
+        <h2 id="chance" class="sub-title">Start</h2>
+        <div class="grid">
+            <div id="1" class="box">
+                <div class="marker cross"></div>
+                <div class="marker circle"></div>
+            </div>
+            <div id="2" class="box">
+                <div class="marker cross"></div>
+                <div class="marker circle"></div>
+            </div>
+            <div id="3" class="box">
+                <div class="marker cross"></div>
+                <div class="marker circle"></div>
+            </div>
+            <div id="4" class="box">
+                <div class="marker cross"></div>
+                <div class="marker circle"></div>
+            </div>
+            <div id="5" class="box">
+                <div class="marker cross"></div>
+                <div class="marker circle"></div>
+            </div>
+            <div id="6" class="box">
+                <div class="marker cross"></div>
+                <div class="marker circle"></div>
+            </div>
+            <div id="7" class="box">
+                <div class="marker cross"></div>
+                <div class="marker circle"></div>
+            </div>
+            <div id="8" class="box">
+                <div class="marker cross"></div>
+                <div class="marker circle"></div>
+            </div>
+            <div id="9" class="box">
+                <div class="marker cross"></div>
+                <div class="marker circle"></div>
+            </div>
+        </div>
+        <button id="stop" class="stop-button">Stop Game</button>
+    </div>
+
+    <!-- Winner Declaration -->
+    <div class="winner_declaration" style="display: none;">
+        <h2 id="win_text">Winner is ...</h2>
+        <button onclick="location.reload()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
